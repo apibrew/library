@@ -8,7 +8,7 @@ const mapUserTo = (record) => {
         password: record.password,
         roles: [
             {
-                "name": 'chat-user'
+                "name": 'app-user'
             }
         ]
     }

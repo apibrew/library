@@ -1,0 +1,6 @@
+type: system/Role
+name: app-user
+permissions:
+  - namespace: default
+    operation: FULL
+    permit: ALLOW
