@@ -1,0 +1,16 @@
+type: resource
+name: AppUser
+virtual: true
+properties:
+  username:
+    type: STRING
+  password:
+    type: STRING
+annotations:
+  AllowPublicCreateAccess: "true"
+---
+type: nano/Code
+name: UserRegistration.js
+language: JAVASCRIPT
+content:
+  $base64File: 'schema/AppUser.js'
