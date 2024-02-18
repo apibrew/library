@@ -11,5 +11,5 @@ You can achive it by help of AppUser
 Installation:
 
 ```bash
-apbr apply -f https://raw.githubusercontent.com/apibrew/library/master/AppUser.yml
+apbr apply -f https://raw.githubusercontent.com/apibrew/library/master/app-user/AppUser.yml
 ```
