@@ -13,6 +13,6 @@ type: nano/Code
 name: UserRegistration.js
 language: JAVASCRIPT
 content:
-  $base64File: './AppUser.js'
+  $file: './AppUser.js'
 ---
 $import: ./roles.yml
