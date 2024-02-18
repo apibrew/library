@@ -15,4 +15,4 @@ language: JAVASCRIPT
 content:
   $file: './AppUser.js'
 ---
-$import: ./roles.yml
+$include: ./roles.yml
