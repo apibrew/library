@@ -1,0 +1,15 @@
+$include: ./namespace.yml
+---
+$include: ./Chat.yml
+---
+$include: ./User.yml
+---
+$include: ./Message.yml
+---
+$include: ./Config.yml
+---
+type: nano/Code
+name: TelegramBot.js
+language: JAVASCRIPT
+content:
+  $file: './TelegramBot.js'

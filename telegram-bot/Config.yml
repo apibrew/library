@@ -1,0 +1,13 @@
+type: resource
+namespace:
+  name: TelegramBot
+name: Config
+entity: "telegram_config"
+properties:
+  name:
+    type: string
+    required: true
+    unique: true
+  token:
+    type: string
+    required: true

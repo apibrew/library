@@ -1,0 +1,24 @@
+type: resource
+namespace:
+  name: TelegramBot
+name: User
+entity: "telegram_user"
+properties:
+  botConfig:
+    type: reference
+    reference: TelegramBot/Config
+  userId:
+    type: int64
+  isBot:
+    type: bool
+  firstName:
+    type: string
+  lastName:
+    type: string
+  username:
+    type: string
+indexes:
+  - properties:
+      - name: botConfig
+      - name: userId
+    unique: true

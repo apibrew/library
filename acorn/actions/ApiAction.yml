@@ -1,0 +1,29 @@
+type: resource
+name: ApiAction
+namespace:
+  name: acorn
+properties:
+  action:
+    type: enum
+    enumValues:
+      - CREATE
+      - UPDATE
+      - DELETE
+      - GET
+      - LIST
+  $type:
+    type: string
+  payload:
+    type: object
+    required: false
+  params:
+    type: object
+    required: false
+  result:
+    type: object
+---
+type: nano/Code
+name: acorn/actions/ApiAction.js
+language: JAVASCRIPT
+content:
+  $file: './ApiAction.js'

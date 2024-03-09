@@ -1,0 +1,26 @@
+type: resource
+namespace:
+  name: TelegramBot
+name: Chat
+entity: "telegram_chat"
+properties:
+  botConfig:
+    type: reference
+    reference: TelegramBot/Config
+  chatId:
+    type: int32
+    required: true
+    unique: true
+  firstName:
+    type: string
+  lastName:
+    type: string
+  username:
+    type: string
+  chatType:
+    type: string
+indexes:
+  - properties:
+      - name: botConfig
+      - name: chatId
+    unique: true
